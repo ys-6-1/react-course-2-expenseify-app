@@ -1,6 +1,5 @@
 import expensesReducer from '../../reducers/expenses';
 import expenses from '../fixtures/expenses';
-import { bindActionCreators } from 'redux';
 
 test('should set default state', () => {
     const state = expensesReducer(undefined, { type: '@@INIT' });
