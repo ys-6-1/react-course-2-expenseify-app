@@ -6,7 +6,7 @@ let startLogout, wrapper;
 beforeEach(() => {
     startLogout = jest.fn();
     wrapper = shallow(<Header startLogout={startLogout}/>)
-})
+});
 
 test('should render Header correctly',() => {
     const wrapper = shallow(<Header startLogout={() => { }}/>);
